@@ -8,8 +8,8 @@
 	<green>255</green>
 	<blue>255</blue>
 	
-	<fadingspeed>1</fadingspeed>
-	<color_mode>Single</color_mode>
+	<fadingspeed>10</fadingspeed>
+	<color_mode>Rainbow</color_mode>
 	
 	<rainbow_offset>0</rainbow_offset>
 	<rainbow_scale>100</rainbow_scale>
@@ -20,11 +20,11 @@
 	
 	<sequence_active>False</sequence_active>	
 	
-	<backlight_brightness>0</backlight_brightness>	
-	<backlight_brightness_percent>0</backlight_brightness_percent>	
+	<backlight_brightness>5</backlight_brightness>	
+	<backlight_brightness_percent>2</backlight_brightness_percent>	
 	
 	<backlight_red>255</backlight_red>		
-	<backlight_green>255</backlight_green>		
+	<backlight_green>15</backlight_green>		
 	<backlight_blue>255</backlight_blue>
 	
 	<speed_slowest_red>255</speed_slowest_red>		
