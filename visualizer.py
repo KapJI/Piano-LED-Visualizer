@@ -510,7 +510,7 @@ class MenuLCD:
             element.setAttribute("text"  , port)
             mc = self.DOMTree.getElementsByTagName("Ports_Settings")[2]
             mc.appendChild(element)
-            
+
     def update_multicolor(self, colors_list):        
         i = 0
         self.update_ports()
@@ -960,7 +960,6 @@ class MenuLCD:
         if(location == "Ports_Settings"):
             if(choice == "Refresh ports" or choice == "Input" or choice == "Playback"):
                 menu.update_ports()                
-        
             if(choice == "Reset Bluetooth service"):
                 menu.render_message("Reseting BL service", "", 1000)
                 os.system("sudo systemctl restart btmidi.service")        
@@ -1059,6 +1058,9 @@ class MenuLCD:
                 usersettings.reset_to_default()
             else:
                 self.go_back()
+
+        if(location == "Other_Settings" and choice == "Startup time"):
+            menu.render_message("Startup took:", "{:.2f} seconds".format(seconds_to_start), 3000)
 
         if (location == "Shutdown"):
             if (choice == "Confirm"):
@@ -1870,6 +1872,7 @@ pedal_deadzone = 10
 timeshift_start = time.time()
 
 fastColorWipe(ledstrip.strip, True)
+seconds_to_start = time.time() - psutil.boot_time()
 
 while True:   
     #screensaver

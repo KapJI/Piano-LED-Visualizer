@@ -201,6 +201,7 @@
 			<Reset_to_default_settings text="Confirm"></Reset_to_default_settings>
 			<Reset_to_default_settings text="Cancel"></Reset_to_default_settings>		
 		</Other_Settings>
+		<Other_Settings text="Startup time"></Other_Settings>
 	</menu>
 	<menu text="Shutdown Options">
 		<Shutdown_Options text="Shutdown">
